@@ -12,9 +12,10 @@ public class CalculateDay {
         int j = date.getYear()/100;
         int k = date.getYear()%100;
 
-        int h = (q + ((13*(m + 1))/5) + k + (k/4) + (j/4) - 2 * j) % 7;
+        int h = (q + ((13 * (m + 1)) / 5) + k + (k / 4) + (j / 4) - 2 * j) % 7;
 
-        int d = ((h+5) % 7) + 1;
+        int d = ((h + 5) % 7) + 1;
+
 
         if (d != 5){
             return "Nej";
